@@ -1,9 +1,69 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-	<head>
-		<title></title>
-	</head>
-	<body>
-	
-	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="cube">
+<head >
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="width"/>
+    <meta http-equiv="X-Frame-Options" content="deny" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>MS-CUBE</title>
+    <link rel="stylesheet" type="text/css" href="css/cube.css">	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">  
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/api.js"></script>
+   
+<script type="text/javascript" src="js/config.js"></script>
+ <script type="text/javascript" src="js/base.js"></script>
+     <script src="js/config-mobile.js"></script>
+
+</head>
+<body>    
+    <div id="navigationbar">
+        <div id="logo">
+            <div id="ms" >Morgan Stanley</div>
+            <div id="appname">CUBE</div>                        			
+        </div>         
+	    <input id="lookupText" type="text" name="searchBox" placeholder="lookup" />
+        <img id="appstr" src="img/appstore.jpg" onclick="appstore();"></img>
+    </div>  
+    
+    <div id="content" ng-controller="baseCtrl">                 
+        <div id="base-container" class="container">
+            <div class="container-sections" ng-repeat="section in sections">                    
+                <div  ng-repeat="tile in section.tiles">                    						                        
+						<div class="tile-image">
+							<img class="tile" id="{{tile.tileId}}" src="{{tile.tileImage}}" ng-click="navigate(tile)" />
+						</div>													                        
+                </div>
+            </div>                
+        </div>         
+        <div  class="folderContent"><span class="folderName"></span></div>
+    </div>        
+	<div class="statusbar">		
+        <div id="tabs"><ul></ul></div> 
+	</div>
+</body>
+    <script type="text/javascript">
+        function appstore() {
+            location.href = "app/appstore.htm";
+        }
+
+        function position() {
+            location.href = "app/position.htm";
+        }
+
+        function balances() {
+            location.href = "app/balances.htm";
+        }
+
+        function jive() {
+            location.href = "app/jive.htm";
+        }
+
+</script>
 </html>
