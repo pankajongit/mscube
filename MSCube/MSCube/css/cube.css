@@ -1,0 +1,154 @@
+.bg-color-blue{background-color:#2d89f0;}
+.section{
+    float:left;
+    margin-right:75px;    
+    position:relative;
+}
+.tile-image{   
+    margin:5px;
+    float:left;
+    position:relative;
+    cursor:pointer;  
+}
+
+.tile-image img{
+    height:40px;
+    width:40px;
+}
+
+#ms {    
+    font-size: 15px;                 
+}
+
+#appname {        
+    font-size: 10px;        
+}
+
+#logo {
+    font-family: 'Segoe UI';
+    color: white; 
+    width:50%;   
+    float:left;
+}
+
+body {
+    background: #216D9F;    
+    height:100%;
+    width:100%;
+    margin:0;
+}
+html {
+    margin:0;
+}
+
+.section {
+    width: 960px;
+    height: 100%;
+    position: relative;
+    float: right;    
+}
+  
+.container-sections {
+    width: 300px;
+    position: relative;
+    height:60px;
+}
+        
+#content {
+    width: 90%;    
+    height:90%;
+   position:relative;
+   float:left;
+
+}
+
+#navigationbar{	    
+    width:95%;	
+    height:5%;
+    position:relative;
+    top:5px;
+    left:5px;
+}
+
+#appstr{
+	width:20px;
+	height:20px;
+	float:right;
+}
+
+#refreshBtn{
+    float:right;
+    height: 20px;
+    width: 20px;   
+}
+
+#lookupText{
+	width:15%;	
+	float:right;
+    margin-left:2px;
+    margin-top:0;
+}
+.statusbar{
+	position:absolute;
+	bottom:0;    
+    padding:0;
+	float:left;
+    width:100%;
+}
+.tab{
+	width:15%;
+	margin:0px;
+	float:left;
+    height:100%;
+}
+
+#tabs li a{
+    padding:0;
+}
+
+#tabs ul {
+    background:inherit;
+    border:0px;
+    padding:0px;
+}
+
+#tabs {
+    background:inherit;
+    border:0px;
+    padding:0px;
+}
+
+.folderContent {
+    display:none;
+}
+
+.popupdiv {
+    position: absolute;
+    width: 100%;
+    height: 97%;                
+    background-color: #216D9F;
+    padding : 0px
+}
+
+.app_iframe {
+    width: 100%;
+    height: 95%;                
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.minimize {
+    width: 5%;
+    height: 5%;                
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#tabs li .ui-icon-close { float: left; cursor: pointer; }
+
+ #add_tab { cursor: pointer; }
+
