@@ -39,18 +39,14 @@ function baseCtrl($scope,$location) {
         var splashDiv = $("<div/>");        
         splashDiv.addClass([tile.size, 'bg-color-blue'].join(" "));
         splashDiv.css({
-            'position': 'absolute',
-            'left': 10,
-            'top': 10,
-            'width': el.width() + "px",
-            'height': el.height() + "px"
+            'position': 'absolute'            
         });
         splashDiv.appendTo(document.body);
         splashDiv.animate({
             left: $(window).scrollLeft(),
             top: $(window).scrollTop(),
             width: "100%",
-            height: "100%"
+            height: "97%"
         }, 500, function () {
             launchApp(tile.id, tile.name, tile.appUrl, function () {
                 splashDiv.fadeOut();
@@ -77,10 +73,8 @@ function baseCtrl($scope,$location) {
             popupdiv.appendTo(document.body);
             iframe = $('<iframe id="iframe_' + id + '" frameborder="no" class=app_iframe />');            
             var minimize = $('<img src="img/minimize.png" class=minimize></img>');            
-            minimize.click(function () {                                
-                //popupdiv.toggle("slide", { direction: 'down' });
-                popupdiv.animate({ height: "toggle", bottom: "4%" });
-                //popupdiv.slideDown();
+            minimize.click(function () {                                                
+                popupdiv.animate({ height: "toggle", bottom: "4%" });                
             });         
             iframe.appendTo(popupdiv);
             minimize.appendTo(popupdiv);
