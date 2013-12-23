@@ -1,10 +1,12 @@
 var cube = angular.module('cube', []);
 function baseCtrl($scope,$location) {
-    if (location.href.indexOf("mobile=true") != -1) {
+    if (location.href.indexOf("mobile=true") != -1 || Util.getFromLocalStorage("STORE-IsMOBILE")) {
         $scope.sections = appglobal.configuration_mobile;
+        Util.setToLocalStorage("STORE-IsMOBILE", true);
     } else {
         $scope.sections = appglobal.configuration;
     }
+
     $scope.navigate = function (tile) {
         var el = $('#' + tile.tileId);                
         if (tile.appUrl != null && tile.appUrl.trim() != "" && tile.type !== "folder") {
@@ -107,9 +109,7 @@ function baseCtrl($scope,$location) {
 
         li.delegate("a", "click", function () {
             //$('#' + divid).toggle('slide',{direction:'down'});
-            $('#' + divid).animate({
-                height: "toggle"
-            });
+            $('#' + divid).animate({ height: "toggle", bottom: "4%" });
         });
 
         li.delegate("span.ui-icon-close", "click", function () {
