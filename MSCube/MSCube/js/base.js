@@ -1,4 +1,4 @@
-﻿var cube = angular.module('cube', []);
+var cube = angular.module('cube', []);
 function baseCtrl($scope,$location) {
     if (location.href.indexOf("mobile=true") != -1) {
         $scope.sections = appglobal.configuration_mobile;
@@ -77,9 +77,8 @@ function baseCtrl($scope,$location) {
             var minimize = $('<img src="img/minimize.png" class=minimize></img>');            
             minimize.click(function () {                                
                 //popupdiv.toggle("slide", { direction: 'down' });
-                popupdiv.animate({
-                    height:"toggle"
-                });
+                popupdiv.animate({ height: "toggle", bottom: "4%" });
+                //popupdiv.slideDown();
             });         
             iframe.appendTo(popupdiv);
             minimize.appendTo(popupdiv);
