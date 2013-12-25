@@ -46,7 +46,7 @@ function baseCtrl($scope,$location) {
             left: $(window).scrollLeft(),
             top: $(window).scrollTop(),
             width: "100%",
-            height: "97%"
+            height: "92%"
         }, 500, function () {
             launchApp(tile.id, tile.name, tile.appUrl, function () {
                 splashDiv.fadeOut();
