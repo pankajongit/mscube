@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4D9C30C4-63FD-4465-8B87-C0A65F5B8017}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSCube</RootNamespace>
+    <AssemblyName>MSCube</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\alerts.html" />
+    <Content Include="app\alerts.jpg" />
+    <Content Include="app\appstore.htm" />
+    <Content Include="app\balances.htm" />
+    <Content Include="app\balances.jpg" />
+    <Content Include="app\buy.html" />
+    <Content Include="app\buy.jpg" />
+    <Content Include="app\crm.html" />
+    <Content Include="app\jive.htm" />
+    <Content Include="app\jive.jpg" />
+    <Content Include="app\position.htm" />
+    <Content Include="app\position.jpg" />
+    <Content Include="app\sell.html" />
+    <Content Include="app\sell.jpg" />
+    <Content Include="css\cube.css" />
+    <Content Include="cube.htm" />
+    <Content Include="img\appstore.jpg" />
+    <Content Include="img\AppStore\addContact.png" />
+    <Content Include="img\AppStore\Analysis.jpg" />
+    <Content Include="img\AppStore\balances.jpg" />
+    <Content Include="img\AppStore\buy.jpg" />
+    <Content Include="img\AppStore\calendar.png" />
+    <Content Include="img\AppStore\crmfolder.jpg" />
+    <Content Include="img\AppStore\email.jpg" />
+    <Content Include="img\AppStore\jive.jpg" />
+    <Content Include="img\AppStore\link.jpg" />
+    <Content Include="img\AppStore\Market.jpg" />
+    <Content Include="img\AppStore\position.jpg" />
+    <Content Include="img\AppStore\sell.jpg" />
+    <Content Include="img\AppStore\stats.jpg" />
+    <Content Include="img\AppStore\task.png" />
+    <Content Include="img\crmfolder.jpg" />
+    <Content Include="img\loading.jpg" />
+    <Content Include="img\minimize.jpg" />
+    <Content Include="img\minimize.png" />
+    <Content Include="img\refresh.jpg" />
+    <Content Include="js\base.js" />
+    <Content Include="js\config-mobile.js" />
+    <Content Include="js\config.js" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
