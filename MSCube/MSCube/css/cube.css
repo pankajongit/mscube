@@ -93,7 +93,7 @@ html {
 	bottom:0;    
     padding:0;
 	float:left;
-    width:100%;
+    width:100%;    
 }
 .tab{
 	width:15%;
@@ -125,15 +125,15 @@ html {
 .popupdiv {
     position: absolute;
     width: 100%;
-    height: 92%;                
-    background-color: #216D9F;
+    max-height: 95%;   
+    height: 95%;     
+    background-color: rgba(100,100, 100, 0.4);    
     padding : 0px;
 }
 
 .app_iframe {
     width: 100%;
     height: 95%;                
-    background-color: white;
     position: absolute;
     bottom: 0;
 }
